@@ -25,11 +25,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(#ffffff, #3d10bd);
-  background: linear-gradient(#9ef9d8, #caf6bf);
-  background: linear-gradient(#ecfdff, #41f0d1);
-  background: linear-gradient(#64e8de, #8a64eb);
+  background: linear-gradient(#9ef9d8, #8a64eb);
   background: linear-gradient(#e0c4fd, #8fc6fd);
+  /* background: linear-gradient(#ecfdff, #41f0d1); */
 }
 
 /* /////////////////////////////////// */
