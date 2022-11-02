@@ -22,8 +22,8 @@ body {
 
 .cubo {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 
   transform-style: preserve-3d;
   transform: rotateX(-50deg) rotateY(25deg) rotateZ(0deg);
@@ -50,37 +50,37 @@ body {
   top: 0;
   left: 0;
   color: white;
-  font-size: 15rem;
+  font-size: 10rem;
 }
 
 #cara1 {
   background-color: rgba(0, 0, 255, 0.563);
-  transform: rotateY(0deg) translateZ(150px);
+  transform: rotateY(0deg) translateZ(100px);
 }
 
 #cara2 {
   background-color: rgba(255, 0, 0, 0.547);
-  transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(100px);
 }
 
 #cara3 {
   background-color: rgba(0, 128, 0, 0.556);
-  transform: rotateY(180deg) translateZ(150px);
+  transform: rotateY(180deg) translateZ(100px);
 }
 
 #cara4 {
   background-color: rgba(128, 0, 128, 0.57);
-  transform: rotateY(270deg) translateZ(150px);
+  transform: rotateY(270deg) translateZ(100px);
 }
 
 #cara5 {
   background-color: rgba(255, 255, 0, 0.538);
-  transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(100px);
 }
 
 #cara6 {
   background-color: rgba(0, 250, 154, 0.522);
-  transform: rotateX(90deg) rotateY(180deg) translateZ(150px);
+  transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
 }
 
 
