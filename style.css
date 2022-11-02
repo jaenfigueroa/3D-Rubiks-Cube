@@ -30,14 +30,15 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-
   transform-style: preserve-3d;
+}
+
+#cubo1 {
   transform: rotateX(-50deg) rotateY(25deg) rotateZ(0deg);
   animation: cubo 5s linear infinite;
 
   /* transform: rotateX(25deg); */
 }
-
 .contenedor-caras {
   position: absolute;
   top: 0;
@@ -145,14 +146,8 @@ body {
 /* //////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////// */
 
-.cubo2 {
-  position: relative;
-  width: 200px;
-  height: 200px;
-
-  transform-style: preserve-3d;
+#cubo2 {
   transform: rotateX(180deg) rotateY(25deg) rotateZ(0deg) translateY(20px);
-
   animation: rotar 4s infinite linear;
 }
 
