@@ -1,1 +1,1 @@
-https://jaenfigueroa.github.com/Cube-3D/
+https://jaenfigueroa.github.io/Cube-3D/
