@@ -5,7 +5,8 @@
   --azul: rgb(41, 41, 239);
   --blanco: white;
   --amarillo: #ffed2b;
-  --negro: rgb(22, 22, 22);
+  /* --negro: rgb(22, 22, 22); */
+  --negro: rgb(29, 29, 29);
 }
 
 * {
@@ -64,7 +65,6 @@ body {
 
   flex-wrap: wrap;
   background-color: rgb(56, 56, 56);
-  /* background-color: var(--negro); */
 }
 
 #cara1 {
