@@ -1,10 +1,12 @@
 :root {
   --rojo: rgb(255, 26, 72);
   --verde: #1df169;
-  --naranja: orangered;
+  --naranja: rgb(255, 94, 35);
+  --naranja: rgb(255, 104, 48);
   --azul: rgb(41, 41, 239);
   --blanco: white;
   --amarillo: #ffed2b;
+
   /* --negro: rgb(22, 22, 22); */
   --negro: rgb(29, 29, 29);
 }
@@ -40,7 +42,9 @@ body {
 
   transform-style: preserve-3d;
   transform: rotateX(-50deg) rotateY(25deg) rotateZ(0deg);
-  animation: cubo 4s linear infinite;
+  animation: cubo 5s linear infinite;
+
+  /* transform: rotateX(25deg); */
 }
 
 .cubo div {
@@ -70,23 +74,38 @@ body {
   /* background-color: black; */
 }
 
+/* cara rojo */
 #cara1 {
   transform: rotateY(0deg) translateZ(100px);
+  width: 100%;
+  height: 60%;
 }
+/* cara verde */
 #cara2 {
   transform: rotateY(90deg) translateZ(100px);
+  width: 100%;
+  height: 60%;
 }
+/* cara naranja */
 #cara3 {
   transform: rotateY(180deg) translateZ(100px);
+  width: 100%;
+  height: 60%;
 }
+/* cara azul */
 #cara4 {
   transform: rotateY(270deg) translateZ(100px);
+  width: 100%;
+  height: 60%;
 }
+/* cara blanco */
 #cara5 {
   transform: rotateX(90deg) translateZ(100px);
 }
+/* cara amarillo */
 #cara6 {
-  transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
+  /* transform: rotateX(90deg) rotateY(180deg) translateZ(100px); */
+  transform: rotateX(90deg) rotateY(180deg) translateZ(20px);
 }
 
 .cara > div {
@@ -100,15 +119,23 @@ body {
 
 #cara1 > div {
   background-color: var(--rojo);
+  width: calc(100% / 3);
+  height: 50%;
 }
 #cara2 > div {
   background-color: var(--verde);
+  width: calc(100% / 3);
+  height: 50%;
 }
 #cara3 > div {
   background-color: var(--naranja);
+  width: calc(100% / 3);
+  height: 50%;
 }
 #cara4 > div {
   background-color: var(--azul);
+  width: calc(100% / 3);
+  height: 50%;
 }
 #cara5 > div {
   background-color: var(--blanco);
@@ -125,4 +152,101 @@ body {
   to {
     transform: rotateX(-360deg) rotateY(360deg);
   }
+}
+
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+
+.cubo2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  transform-style: preserve-3d;
+  transform: rotateX(180deg) rotateY(25deg) rotateZ(0deg) translateY(20px);
+
+  animation: rotar 4s infinite linear;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateX(180deg) rotateY(360deg) rotateZ(0deg) translateY(20px);
+  }
+  to {
+    transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg) translateY(20px);
+  }
+}
+/* cara rojo */
+#cara7 {
+  transform: rotateY(0deg) translateZ(100px);
+  width: 100%;
+  height: 30%;
+}
+/* cara verde */
+#cara8 {
+  transform: rotateY(90deg) translateZ(100px);
+  width: 100%;
+  height: 30%;
+}
+/* cara naranja */
+#cara9 {
+  transform: rotateY(180deg) translateZ(100px);
+  width: 100%;
+  height: 30%;
+}
+/* cara azul */
+#cara10 {
+  transform: rotateY(270deg) translateZ(100px);
+  width: 100%;
+  height: 30%;
+}
+/* cara blanco */
+#cara11 {
+  transform: rotateX(90deg) translateZ(100px);
+}
+/* cara amarillo */
+#cara12 {
+  transform: rotateX(90deg) rotateY(180deg) translateZ(-40px);
+}
+
+.cara > div {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  border: 3.5px solid var(--negro);
+  /* border: 4px solid var(--negro); */
+  position: relative;
+  border-radius: 12px;
+}
+
+#cara7 > div {
+  background-color: var(--naranja);
+  /* background-color: var(--azul); */
+  width: calc(100% / 3);
+  height: 100%;
+}
+#cara8 > div {
+  background-color: var(--verde);
+  /* background-color: var(--naranja); */
+  width: calc(100% / 3);
+  height: 100%;
+}
+#cara9 > div {
+  background-color: var(--rojo);
+  /* background-color: var(--verde); */
+  width: calc(100% / 3);
+  height: 100%;
+}
+#cara10 > div {
+  background-color: var(--azul);
+  /* background-color: var(--rojo); */
+  width: calc(100% / 3);
+  height: 100%;
+}
+#cara11 > div {
+  background-color: var(--amarillo);
+}
+#cara12 > div {
+  background-color: var(--blanco);
 }
