@@ -63,35 +63,26 @@ body {
   left: 0;
 
   flex-wrap: wrap;
+  background-color: rgb(56, 56, 56);
+  /* background-color: var(--negro); */
 }
 
 #cara1 {
-  background-color: var(--rojo);
   transform: rotateY(0deg) translateZ(100px);
 }
-
 #cara2 {
-  background-color: var(--verde);
   transform: rotateY(90deg) translateZ(100px);
 }
-
 #cara3 {
-  background-color: var(--naranja);
   transform: rotateY(180deg) translateZ(100px);
 }
-
 #cara4 {
-  background-color: var(--azul);
   transform: rotateY(270deg) translateZ(100px);
 }
-
 #cara5 {
-  background-color: var(--blanco);
   transform: rotateX(90deg) translateZ(100px);
 }
-
 #cara6 {
-  background-color: var(--amarillo);
   transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
 }
 
@@ -100,6 +91,26 @@ body {
   height: calc(100% / 3);
   border: 3.5px solid var(--negro);
   position: relative;
+  border-radius: 10px;
+}
+
+#cara1 > div {
+  background-color: var(--rojo);
+}
+#cara2 > div {
+  background-color: var(--verde);
+}
+#cara3 > div {
+  background-color: var(--naranja);
+}
+#cara4 > div {
+  background-color: var(--azul);
+}
+#cara5 > div {
+  background-color: var(--blanco);
+}
+#cara6 > div {
+  background-color: var(--amarillo);
 }
 
 @keyframes cubo {
