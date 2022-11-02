@@ -93,8 +93,9 @@ body {
   width: calc(100% / 3);
   height: calc(100% / 3);
   border: 3.5px solid var(--negro);
+  border: 4px solid var(--negro);
   position: relative;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 #cara1 > div {
