@@ -244,7 +244,9 @@ a {
 
 .link,
 .fa-github {
-  color: rgb(204, 179, 255);
+  color: #cec0fc;
+  color: #c5b4ff;
+  transition: 0.5s;
 }
 .fa-star {
   color: #ffff7e;
@@ -252,5 +254,5 @@ a {
 }
 .contenedor-github:hover .fa-github,
 .contenedor-github:hover .link {
-  color: rgb(163, 163, 255);
+  color: rgb(163, 181, 255);
 }
