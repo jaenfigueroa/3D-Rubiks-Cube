@@ -64,7 +64,10 @@ body {
   left: 0;
 
   flex-wrap: wrap;
+  background-color: rgb(84, 84, 84);
   background-color: rgb(56, 56, 56);
+  /* background-color: var(--negro); */
+  /* background-color: black; */
 }
 
 #cara1 {
