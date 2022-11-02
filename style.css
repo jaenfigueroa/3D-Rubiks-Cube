@@ -1,3 +1,13 @@
+:root {
+  --rojo: rgb(255, 26, 72);
+  --verde: #1df169;
+  --naranja: orangered;
+  --azul: rgb(41, 41, 239);
+  --blanco: white;
+  --amarillo: #ffed2b;
+  --negro: rgb(22, 22, 22);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +25,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #333;
+  background: linear-gradient(#ffffff, #3d10bd);
+  background: linear-gradient(#9ef9d8, #caf6bf);
+  background: linear-gradient(#ecfdff, #41f0d1);
+  background: linear-gradient(#64e8de, #8a64eb);
+  background: linear-gradient(#e0c4fd, #8fc6fd);
 }
 
 /* /////////////////////////////////// */
@@ -49,40 +63,46 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  color: white;
-  font-size: 10rem;
+
+  flex-wrap: wrap;
 }
 
 #cara1 {
-  background-color: rgba(0, 0, 255, 0.563);
+  background-color: var(--rojo);
   transform: rotateY(0deg) translateZ(100px);
 }
 
 #cara2 {
-  background-color: rgba(255, 0, 0, 0.547);
+  background-color: var(--verde);
   transform: rotateY(90deg) translateZ(100px);
 }
 
 #cara3 {
-  background-color: rgba(0, 128, 0, 0.556);
+  background-color: var(--naranja);
   transform: rotateY(180deg) translateZ(100px);
 }
 
 #cara4 {
-  background-color: rgba(128, 0, 128, 0.57);
+  background-color: var(--azul);
   transform: rotateY(270deg) translateZ(100px);
 }
 
 #cara5 {
-  background-color: rgba(255, 255, 0, 0.538);
+  background-color: var(--blanco);
   transform: rotateX(90deg) translateZ(100px);
 }
 
 #cara6 {
-  background-color: rgba(0, 250, 154, 0.522);
+  background-color: var(--amarillo);
   transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
 }
 
+.cara > div {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  border: 3.5px solid var(--negro);
+  position: relative;
+}
 
 @keyframes cubo {
   0% {
