@@ -1,26 +1,19 @@
 :root {
+  --fondo: linear-gradient(#e0c4fd, #8fc6fd);
   --rojo: rgb(255, 26, 72);
   --verde: #1df169;
-  --naranja: rgb(255, 94, 35);
   --naranja: rgb(255, 104, 48);
   --azul: rgb(41, 41, 239);
   --blanco: white;
   --amarillo: #ffed2b;
-
-  /* --negro: rgb(22, 22, 22); */
   --negro: rgb(29, 29, 29);
+  --gris: rgb(56, 56, 56);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
-  font-family: sans-serif;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 body {
@@ -28,9 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(#9ef9d8, #8a64eb);
-  background: linear-gradient(#e0c4fd, #8fc6fd);
-  /* background: linear-gradient(#ecfdff, #41f0d1); */
+  background: var(--fondo);
 }
 
 /* /////////////////////////////////// */
@@ -47,7 +38,7 @@ body {
   /* transform: rotateX(25deg); */
 }
 
-.cubo div {
+.contenedor-caras {
   position: absolute;
   top: 0;
   left: 0;
@@ -68,10 +59,7 @@ body {
   left: 0;
 
   flex-wrap: wrap;
-  background-color: rgb(84, 84, 84);
-  background-color: rgb(56, 56, 56);
-  /* background-color: var(--negro); */
-  /* background-color: black; */
+  background-color: var(--gris);
 }
 
 /* cara rojo */
@@ -104,14 +92,12 @@ body {
 }
 /* cara amarillo */
 #cara6 {
-  /* transform: rotateX(90deg) rotateY(180deg) translateZ(100px); */
   transform: rotateX(90deg) rotateY(180deg) translateZ(20px);
 }
 
 .cara > div {
   width: calc(100% / 3);
   height: calc(100% / 3);
-  border: 3.5px solid var(--negro);
   border: 4px solid var(--negro);
   position: relative;
   border-radius: 12px;
@@ -141,8 +127,7 @@ body {
   background-color: var(--blanco);
 }
 #cara6 > div {
-  /* background-color: var(--amarillo); */
-  background-color: rgb(56, 56, 56);
+  background-color: var(--gris);
 }
 
 @keyframes cubo {
@@ -212,36 +197,23 @@ body {
   transform: rotateX(90deg) rotateY(180deg) translateZ(-40px);
 }
 
-.cara > div {
-  width: calc(100% / 3);
-  height: calc(100% / 3);
-  border: 3.5px solid var(--negro);
-  /* border: 4px solid var(--negro); */
-  position: relative;
-  border-radius: 12px;
-}
-
 #cara7 > div {
   background-color: var(--naranja);
-  /* background-color: var(--azul); */
   width: calc(100% / 3);
   height: 100%;
 }
 #cara8 > div {
   background-color: var(--verde);
-  /* background-color: var(--naranja); */
   width: calc(100% / 3);
   height: 100%;
 }
 #cara9 > div {
   background-color: var(--rojo);
-  /* background-color: var(--verde); */
   width: calc(100% / 3);
   height: 100%;
 }
 #cara10 > div {
   background-color: var(--azul);
-  /* background-color: var(--rojo); */
   width: calc(100% / 3);
   height: 100%;
 }
@@ -249,5 +221,5 @@ body {
   background-color: var(--amarillo);
 }
 #cara12 > div {
-  background-color: rgb(56, 56, 56);
+  background-color: var(--gris);
 }
