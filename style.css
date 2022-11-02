@@ -256,3 +256,8 @@ a {
 .contenedor-github:hover .link {
   color: rgb(163, 181, 255);
 }
+.contador-visitas {
+  position: fixed;
+  bottom: 0px;
+  z-index: -1;
+}
