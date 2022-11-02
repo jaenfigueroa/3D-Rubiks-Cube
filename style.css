@@ -141,7 +141,8 @@ body {
   background-color: var(--blanco);
 }
 #cara6 > div {
-  background-color: var(--amarillo);
+  /* background-color: var(--amarillo); */
+  background-color: rgb(56, 56, 56);
 }
 
 @keyframes cubo {
@@ -248,5 +249,5 @@ body {
   background-color: var(--amarillo);
 }
 #cara12 > div {
-  background-color: var(--blanco);
+  background-color: rgb(56, 56, 56);
 }
