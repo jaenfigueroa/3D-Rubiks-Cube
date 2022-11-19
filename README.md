@@ -1,6 +1,6 @@
 # 3D-Rubiks-Cube
 
-Minecraft Game made with pure css and javascript.
+Animation of a rubik's cube only with CSS.
 
 
 <div align="left" >
