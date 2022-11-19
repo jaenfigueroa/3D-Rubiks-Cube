@@ -22,7 +22,6 @@ Animation of a rubik's cube only with CSS.
 This project was created with:
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## 🌍 Website
 
